@@ -18,7 +18,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-My research focus is in the field of Artificial Intelligence. My initial work was in the field of neural network pruning. I also conducted research in target tracking for unmanned aerial vehicles (UAV). Additionally, as a Graduate Teaching Assistant, I taught engineering mathematics to undergraduate students at Colorado State University. Currently, I am presently pursuing research in the field of Spiking Neural Networks.
+My research focus is in the field of Artificial Intelligence. My initial work was in the field of neural network pruning. I also conducted research in target tracking for unmanned aerial vehicles (UAV). Additionally, as a Graduate Teaching Assistant, I taught engineering mathematics to undergraduate students at Colorado State University. I am presently pursuing research in the field of Spiking Neural Networks.
 
 **Research Interests**
 
