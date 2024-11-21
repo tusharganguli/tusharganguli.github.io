@@ -1,3 +1,13 @@
+---
+layout: post
+title: What is a Random Variable?
+date: 2015-10-20 11:12:00-0400
+description: an example of a blog post with some math
+tags: randomvariable probability
+categories: probability
+related_posts: false
+---
+
 # What is a Random Variable? (Draft)
 
 According to Gubner [1], Note 2.1, A function X from $\Omega$ into $\mathbb{R}$ is a random variable if and only if,
@@ -76,7 +86,7 @@ that contains the eight possible sequences of tosses.
               \end{cases}
   $$
 
-**Q: What is the difference between events and outcomes?**
+**Q. What is the difference between events and outcomes?**
 
 The sample space ($\Omega$) is the universal set containing all possible outcomes of the experiment. A subset of the sample space ($A \subseteq \Omega$) represents an event. If an outcome ($\omega$) is part of an event, then $\omega \in A$, where $A$ is a specific subset of $\Omega$.
 
