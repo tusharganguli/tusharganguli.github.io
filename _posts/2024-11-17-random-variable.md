@@ -8,7 +8,7 @@ categories: probability
 related_posts: false
 ---
 
-According to Gubner [1], Note 2.1, A function X from \(\Omega\) into \(\mathbb{R}\) is a random variable if and only if,
+According to Gubner [1], Note 2.1, A function X from $$\Omega$$ into $\mathbb{R} is a random variable if and only if,
 
 $$
     \{\omega \in \Omega : X(\omega) \in B\} \in \mathcal{A}, \; \forall B \in \mathcal{B}
