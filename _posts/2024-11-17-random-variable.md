@@ -1,16 +1,14 @@
 ---
 layout: post
 title: What is a Random Variable?
-date: 2015-10-20 11:12:00-0400
-description: an example of a blog post with some math
+date: 2024-11-17 11:11:11-111
+description: exposition on the definition of random variable.
 tags: randomvariable probability
 categories: probability
 related_posts: false
 ---
 
-# What is a Random Variable? (Draft)
-
-According to Gubner [1], Note 2.1, A function X from $\Omega$ into $\mathbb{R}$ is a random variable if and only if,
+According to Gubner [1], Note 2.1, A function X from \(\Omega\) into \(\mathbb{R}\) is a random variable if and only if,
 
 $$
     \{\omega \in \Omega : X(\omega) \in B\} \in \mathcal{A}, \; \forall B \in \mathcal{B}
@@ -69,14 +67,19 @@ that contains the eight possible sequences of tosses.
 
 - Our events of interest are the _number of heads in a sequence of three coin tosses_.
 - The number of heads can range from $0$ to $3$. Hence, the random variable will map the events of interest to the following set:
+
   $$
   R = \{ 0,1,2,3 \}
   $$
+
 - The mapping will be:
+
   $$
       \Omega \rightarrow R
   $$
+
 - Hence our random variable is defined as:
+
   $$
   X(\omega) = \begin{cases}
                   0, & \omega = \{\text{TTT}\} \\

@@ -21,6 +21,7 @@ social: true # includes social icons at the bottom of the page
 My research focus is in the field of Artificial Intelligence. My initial work in neural network pruning resulted in a novel solution and publication of a journal paper. I also conducted research in target tracking for unmanned aerial vehicles (UAV). Additionally, as a Graduate Teaching Assistant, I taught engineering mathematics to undergraduate students at Colorado State University. Currently, I am pursuing research in the field of Machine Unlearning for Large Language Models.
 
 **Research Interests**
+
 - Machine Unlearning in Large Language Models
 - Semantic Search and Retrieval
 - Neural Network Pruning
