@@ -1,48 +1,73 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Tushar Ganguli",
+    "label": "Machine Learning Researcher",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "<firstname>.<lastname>@colostate.edu",
+    "summary": "",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "city": "Foster City",
+      "postalCode": "CA 94404",
       "countryCode": "US",
       "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    }
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "Byteridge ",
+      "position": "Principal Architect AI/ML",
+      "startDate": "2024-09-01",
+      "endDate": "present",
+      "summary": "Lead the development and execution of AI/ML strategies aligned with organizational objectives. Collaborate with product management, operations and sales to align initiatives with customer expectations. Mentor and develop team members, fostering a culture of continuous learning within the team. Communicate with non-technical stakeholders, influencing decision-making at the executive level.",
+      "highlights": [""]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Dataworkz",
+      "position": "Machine Learning Consultant",
+      "startDate": "2024-03-21",
+      "endDate": "2024-08-19",
+      "summary": "Created state-of-the-art RAG Evaluation framework using LLM-as-a-Judge. Development of RAG-based QA system using fine-tuned finance embedding models. Web-based Text-To-SQL system enabling natural language queries to retrieve data from structured database.",
+      "highlights": [""]
+    },
+    {
+      "name": "Colorado State University",
+      "position": "Graduate Research Assistant",
+      "startDate": "2017-01-01",
+      "endDate": "2023-05-15",
+      "summary": "Developed and published a paper on novel neural network pruning technique, achieving significant compression with minimal accuracy loss. Conducted research in UAV target tracking using POMDP, contributing to advancements in autonomous systems. Served as an appointed tutor, teaching advanced mathematical concepts to engineering students.",
+      "highlights": ["Publication of a paper."]
+    },
+    {
+      "name": "Colorado State University",
+      "position": "Graduate Teaching Assistant",
+      "startDate": "2022-08-14",
+      "endDate": "2023-05-15",
+      "summary": "Conducted classes on mathematical topics essential for understanding core concepts in engineering. Responsible for conducting the course end to end, creating content, teaching and grading assignments.",
+      "highlights": [""]
+    },
+    {
+      "name": "Colorado State University",
+      "position": "Course Assistant",
+      "startDate": "2014-08-14",
+      "endDate": "present",
+      "summary": "Grader for graduate courses, ECE514-Application of Random Processes and ECE520-Optimization Methods.",
+      "highlights": [""]
+    },
+    {
+      "name": "Nokia",
+      "position": "Senior Software Engineer",
+      "startDate": "2006-03",
+      "endDate": "2011-09",
+      "summary": "Led cryptography projects, including end-to-end development of OCSP and authentication frameworks. Directed defect management and mentoring initiatives, ensuring high-quality deliverables and knowledge transfer within teams.",
+      "highlights": ["Award for project management excellence (2008), Critical project delivery (2007)"]
+    },
+    {
+      "name": "Network Security Solutions",
+      "position": "Principal Software Engineer",
+      "startDate": "2003-03",
+      "endDate": "2006-01",
+      "summary": "Development of Xecure Message Service (end-to-end encrypted messaging servive). Development of secure LAN framework using proprietary parallel port communication.",
+      "highlights": ["Letter of commendation for delivery of flagship product (2005)"]
     }
   ],
   "education": [
