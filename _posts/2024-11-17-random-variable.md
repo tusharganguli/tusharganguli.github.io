@@ -15,17 +15,15 @@ $$
 $$
 
 Here:
-
 $$\Omega$$ : is the sample space.
-<br> $$\omega$$: outcome defined in the sample space.
-<br> $$\mathcal{A}$$: $$\sigma$$-algebra defined on subsets of sample space ($$\Omega$$).
-<br> $$\mathcal{B}$$: Borel $$\sigma$$-field is the smallest $$\sigma$$-algebra on $$\mathbb{R}$$ containing all open subsets of $$\mathbb{R}$$.
-<br> $$B$$: is the Borel set such that $$B \in \mathcal{B}$$.
+$$\omega$$: outcome defined in the sample space.
+$$\mathcal{A}$$: $$\sigma$$-algebra defined on subsets of sample space ($$\Omega$$).
+$$\mathcal{B}$$: Borel $$\sigma$$-field is the smallest $$\sigma$$-algebra on $$\mathbb{R}$$ containing all open subsets of $$\mathbb{R}$$.
+$$B$$: is the Borel set such that $$B \in \mathcal{B}$$.
 
 where:
 
 1. $$\{\omega \in \Omega : X(\omega) \in B \}$$: is the preimage of the Borel set $$B$$ under the random variable $$X$$. It is a subset of $$\Omega$$, representing the set of outcomes $$\omega$$ that map to values in $$B$$ under $$X$$.
-
 2. $$\in \mathcal{A}$$: This subset must belong to the $$\sigma$$-algebra $$\mathcal{A}$$ i.e., the preimage of any Borel set $$B$$ is an event that can be measured (assigned a probability).
 
 If you understand the above definition in its entirety, then I congratulate you on your grasp of the fundamental area of probability. If you do not understand the above and struggle like me, then you are welcome to partake this journey of understanding the nooks and crannies of _"how a random variable is defined"_.
@@ -46,7 +44,7 @@ Here:
 
 - $$\Omega$$ represents the sample space, which is the set of all possible outcomes of the random experiment.
 - $$\mathbb{R}$$ is the set of real numbers.
-- $$X(\omega)$$ represents the random variable that maps the outcome ($$omega$$) to the real line ($$\mathbb{R}$$).
+- $$X(\omega)$$ represents the random variable that maps the outcome ($$\omega$$) to the real line ($$\mathbb{R}$$).
 
 A random variable acts as a bridge, translating outcomes ($$\omega$$) into numerical values ($$\mathbb{R}$$).
 
@@ -100,14 +98,9 @@ The sample space ($$\Omega$$) is the universal set containing all possible outco
 
 **Q. What is the purpose of this mapping?**
 
-The purpose of this mapping is to study the statistical properties of the random variable $$X$$, which encapsulates the behavior of outcomes in the sample space. In statistical terms, the properties of a random variable are often described using measures like mean, variance, and higher-order moments. These measures summarize key aspects of the data, such as its central tendency (mean) and variability (variance). Importantly:
+The purpose of this mapping is to study the statistical properties of the random variable $$X$$, which encapsulates the behavior of outcomes in the sample space. In statistical terms, the properties of a random variable are often described using measures like mean, variance, and higher-order moments. These measures summarize key aspects of the data, such as its central tendency (mean) and variability (variance). Importantly, The moments of a random variable $$X$$ like mean ($$\mathbb{E}[X]$$) and variance ($$\text{Var}(X)$$) provide critical insights into the distribution of $$X$$. Higher-order moments (e.g., skewness and kurtosis) offer a more nuanced understanding of the behavior of $$X$$.
 
-- The moments of a random variable $$X$$ ($$\mathbb{E}[X]$$ for the mean and $$\text{Var}(X)$$ for the variance) provide critical insights into the distribution of $$X$$.
-- Higher-order moments (e.g., skewness and kurtosis) offer a more nuanced understanding of the behavior of $$X$$.
-
-This mathematical representation allows us to gain significant insights into the behavior of a random variable through its moments.
-
-The exercise of creating a random variable is about defining a mapping from a sample space ($$\Omega$$) to the real numbers ($$\mathbb{R}$$). At this stage, the focus is on defining the mapping, laying the groundwork for inducing probabilities and distributions—just the act of associating _outcomes with numerical values_.
+This mathematical representation allows us to gain significant insights into the behavior of a random variable through its moments.The exercise of creating a random variable is about defining a mapping from a sample space ($$\Omega$$) to the real numbers ($$\mathbb{R}$$). At this stage, the focus is on defining the mapping, laying the groundwork for inducing probabilities and distributions—just the act of associating _outcomes with numerical values_.
 
 For example, if we define the random variable $$X$$ as the number of heads in 2 successive coin flips, then $$X$$(No of Heads) $$= \{0,1,2\}$$. No probabilities are assigned directly to the random variable $$X$$ at this stage; they are derived from the underlying probability measure $$P$$ on the sample space.
 
@@ -137,7 +130,7 @@ In the previous section, we explored an example of defining a random variable, a
 A **countably finite set** is a set with a finite number of elements and can be put into a one-to-one correspondence with the first $$n$$ positive integers, where $$n$$ is finite.
 
 - **Example**:
-  - $$A = \{2, 4, 6, 8\}$$ has 4 elements that correspond to the natural numbers $$\{1, 2, 3, 4\}$$.
+  The set $$A = \{2, 4, 6, 8\}$$ has 4 elements that correspond to the natural numbers $$\{1, 2, 3, 4\}$$.
 
 ## Countably Infinite Set
 
@@ -146,15 +139,14 @@ A **countably infinite set** is a set with infinitely many elements, but these e
 - **Definition**: A set is countably infinite if there exists a bijection (one-to-one and onto mapping) between the set and the set of natural numbers $$\mathbb{N} = \{1, 2, 3, \dots\}$$.
 - **Examples**:
   - The set of all natural numbers: $$\mathbb{N} = \{1, 2, 3, 4, \dots\}$$.
-  - The set of all integers: $$\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots\}$$.
-    - $$\mathbb{Z}$$ can be mapped to $$\mathbb{N}$$ using:
-      $$
-      f(n) =
-      \begin{cases}
-      2n & \text{if } n > 0 \\
-      -2n + 1 & \text{if } n \leq 0
-      \end{cases}
-      $$
+  - The set of all integers: $$\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots\}$$. - $$\mathbb{Z}$$ can be mapped to $$\mathbb{N}$$ using:
+    $$
+    f(n) =
+    \begin{cases}
+    2n & \text{if } n > 0 \\
+    -2n + 1 & \text{if } n \leq 0
+    \end{cases}
+    $$
   - The set of even numbers, $$E = \{2, 4, 6, 8, \dots\}$$ maps $$ E \to \mathbb{N} $$ with $$f(n) = 2n$$.
 
 ## Uncountably Infinite Set
