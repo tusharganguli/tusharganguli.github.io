@@ -195,6 +195,11 @@
       "keywords": ["Agents", "Prompt Engineering", "Retrieval Augmented Generation", "LLM Finetuning"]
     },
     {
+      "name": "Vector Database",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["MongoDB", "Chroma"]
+    },
+    {
       "name": "ML Libraries/Framework",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
@@ -216,28 +221,9 @@
       "keywords": ["Python", "C++", "C", "JAVA", "JavaScript", "R", "MATLAB", "JSP", "Servlets", "Symbian C++"]
     },
     {
-      "name": "Vector Database",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": ["MongoDB", "Chroma"]
-    },
-    {
       "name": "Development Tools",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Anaconda",
-        "Jupyter Notebook",
-        "VSCode",
-        "Git",
-        "Flask",
-        "OpenSSL",
-        "Perforce",
-        "Tomcat",
-        "Tortoise SVN",
-        "Visual Studio",
-        "Ant",
-        "Visual Source Safe",
-        "Wireshark"
-      ]
+      "keywords": ["Anaconda", "Jupyter Notebook", "VSCode", "Git", "Flask", "OpenSSL", "Perforce", "Tomcat", "Wireshark"]
     }
   ],
   "languages": [
