@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is a Random Variable?
+title: What is a Random Variable? (Draft)
 date: 2024-11-17 11:11:11-111
 description: exposition on the definition of random variable.
 tags: randomvariable probability
@@ -15,11 +15,12 @@ $$
 $$
 
 Here:
-$$\Omega$$ : is the sample space.
-$$\omega$$: outcome defined in the sample space.
-$$\mathcal{A}$$: $$\sigma$$-algebra defined on subsets of sample space ($$\Omega$$).
-$$\mathcal{B}$$: Borel $$\sigma$$-field is the smallest $$\sigma$$-algebra on $$\mathbb{R}$$ containing all open subsets of $$\mathbb{R}$$.
-$$B$$: is the Borel set such that $$B \in \mathcal{B}$$.
+
+- $$\Omega$$ : is the sample space.
+- $$\omega$$: outcome defined in the sample space.
+- $$\mathcal{A}$$: $$\sigma$$-algebra defined on subsets of sample space ($$\Omega$$).
+- $$\mathcal{B}$$: Borel $$\sigma$$-field is the smallest $$\sigma$$-algebra on $$\mathbb{R}$$ containing all open subsets of $$\mathbb{R}$$.
+- $$B$$: is the Borel set such that $$B \in \mathcal{B}$$.
 
 where:
 
@@ -32,7 +33,47 @@ If you understand the above definition in its entirety, then I congratulate you 
 
 # Intuitive Discussion
 
-A random variable $$X$$ can be defined as follows:
+## Sample Space, Outcomes and Events
+
+Reference: [Lecture Notes, Introduction to Probability by Bertsekas and Tsitsikilis - Section 1.2](https://vfu.bg/en/e-Learning/Math--Bertsekas_Tsitsiklis_Introduction_to_probability.pdf)
+
+When we run an experiment it could produce many possible outcomes. Set of all such possible outcomes is the sample space ($$\Omega$$) of the experiment. A subset of the sample space, which is the collection of all possible outcomes is called an event.
+
+### Example
+
+Consider an experiment involving ten successive coin tosses.
+
+**Experiment**: Ten successive coin tosses.
+
+**Outcomes**: Each outcome is a $$10$$ character string with each character is either a $$H$$ or $$T$$.
+
+$$
+  \omega_1 = HHTTTHHTHH \\
+  \omega_2 = HTHHTTTHHH
+$$
+
+**Sample Space**: Set of all such outcomes is the sample space $$\Omega$$
+
+$$
+  \Omega = \{ HHHHHHHHHH, HTHHTTTHHH, TTTTTTTTTT, \cdots \}
+$$
+
+The total number of possible outcomes of the sample space is, $$|\Omega| = 2^{10} = 1024$$.
+
+**Events**: An event is a subset of the sample space. Some examples are:
+
+- **First Head Occurs on the 3rd Toss**: The set of outcomes where the first Head appears on the 3rd toss:
+
+  $$
+    E_1 = \{\omega \in \Omega : \omega = TTHTTTTTTT \text{ or } \omega = TTHHHHHHHH \text{ and so on.}\}
+  $$
+
+- **Exactly 4 Heads in 10 Tosses**: The set of outcomes with exactly 4 Heads:
+  $$
+  E_2 = \{\omega \in \Omega : \text{Number of } H \text{ in } \omega = 4\}
+  $$
+
+Now let's revisit the definition of a random variable $$X$$:
 
 $$
 \begin{equation}
@@ -44,7 +85,7 @@ Here:
 
 - $$\Omega$$ represents the sample space, which is the set of all possible outcomes of the random experiment.
 - $$\mathbb{R}$$ is the set of real numbers.
-- $$X(\omega)$$ represents the random variable that maps the outcome ($$\omega$$) to the real line ($$\mathbb{R}$$).
+- $$X(\omega)$$ represents the random variable that maps the outcome ($$\omega$$) to the real line ($$\mathbb{R}$$). It is also a real-valued function.
 
 A random variable acts as a bridge, translating outcomes ($$\omega$$) into numerical values ($$\mathbb{R}$$).
 
@@ -98,32 +139,28 @@ The sample space ($$\Omega$$) is the universal set containing all possible outco
 
 **Q. What is the purpose of this mapping?**
 
-The purpose of this mapping is to study the statistical properties of the random variable $$X$$, which encapsulates the behavior of outcomes in the sample space. In statistical terms, the properties of a random variable are often described using measures like mean, variance, and higher-order moments. These measures summarize key aspects of the data, such as its central tendency (mean) and variability (variance). Importantly, The moments of a random variable $$X$$ like mean ($$\mathbb{E}[X]$$) and variance ($$\text{Var}(X)$$) provide critical insights into the distribution of $$X$$. Higher-order moments (e.g., skewness and kurtosis) offer a more nuanced understanding of the behavior of $$X$$.
+The purpose of this mapping is to study the statistical properties of the random variable $$X$$, which encapsulates the behavior of outcomes in the sample space. In statistical terms, the properties of a random variable are often described using measures like mean, variance, and higher-order moments. These measures summarize key aspects of the data, such as its central tendency (mean) and variability (variance). The moments of a random variable $$X$$ like mean ($$\mathbb{E}[X]$$) and variance ($$\text{Var}(X)$$) provide critical insights into the distribution of $$X$$. Higher-order moments (e.g., skewness and kurtosis) offer a more nuanced understanding of the behavior of $$X$$. This mathematical representation allows us to gain significant insights into the behavior of a random variable through its moments.The exercise of creating a random variable is about defining a mapping from a sample space ($$\Omega$$) to the real numbers ($$\mathbb{R}$$).
 
-This mathematical representation allows us to gain significant insights into the behavior of a random variable through its moments.The exercise of creating a random variable is about defining a mapping from a sample space ($$\Omega$$) to the real numbers ($$\mathbb{R}$$). At this stage, the focus is on defining the mapping, laying the groundwork for inducing probabilities and distributions—just the act of associating _outcomes with numerical values_.
-
-For example, if we define the random variable $$X$$ as the number of heads in 2 successive coin flips, then $$X$$(No of Heads) $$= \{0,1,2\}$$. No probabilities are assigned directly to the random variable $$X$$ at this stage; they are derived from the underlying probability measure $$P$$ on the sample space.
-
-The mapping defined by the random variable $$X$$ induces a distribution from the underlying probability measure $$P$$ on the sample space $$\Omega$$.
-
-In the above example, we can say that $$X$$ follows a Binomial distribution. This identification arises because the random variable $$X$$ transforms the distribution on the sample space $$\Omega$$ into a distribution on the real line.
+For example, if we define the random variable $$X$$ as the number of heads in 2 successive coin flips, then $$X$$(No of Heads) $$= \{0,1,2\}$$. The mapping defined by the random variable $$X$$ induces a distribution from the underlying probability measure $$P$$ on the sample space $$\Omega$$. In this example we can say that $$X$$ follows a Binomial distribution. This is because the random variable $$X$$ transforms the distribution on the sample space $$\Omega$$ into a distribution on the real line.
 
 **Q. What does it mean when we say: The random variable $$X$$ is normally distributed?**
 
-- $$X$$ is a random variable with a Gaussian distribution $$N(m, \sigma^2)$$, where $$m$$ is the mean and $$\sigma^2$$ is the variance, denoted as:
-  $$
-  X \sim N(m, \sigma^2)
-  $$
+Suppose $$X$$ is a random variable with a Gaussian distribution $$N(m, \sigma^2)$$, where $$m$$ is the mean and $$\sigma^2$$ is the variance, denoted as:
+
+$$
+X \sim N(m, \sigma^2)
+$$
+
 - This means that the random variable $$X$$, which maps outcomes from the sample space $$\Omega$$ to the real line $$\mathbb{R}$$, induces a normal distribution on $$\mathbb{R}$$ with mean $$m$$ and variance $$\sigma^2$$.
 - The induced distribution on $$\mathbb{R}$$ is described by the probability density function of the normal distribution.
 
-The distribution is present in the sample space $$\Omega$$, but when we map outcomes via $$X(\omega)$$, this distribution is transformed (or induced) onto the real line $$\mathbb{R}$$. This allows us to study the random variable $$X$$ and its properties in the mathematical context of $$\mathbb{R}$$.
+The distribution is present in the sample space $$\Omega$$, but when we map outcomes via $$X(\omega)$$, this distribution is transformed (or induced) onto the real line $$\mathbb{R}$$. This allows us to study the random variable $$X$$ and its properties mathematically.
 
 ---
 
 # Let's Deep Dive
 
-In the previous section, we explored an example of defining a random variable, and the process appeared straightforward. However, this simplicity arose because of the implicit property of the sample space being countably finite. The sample space could also be countably infinite or uncountably infinite. Let's see what these terms mean and how it helps in revising the definition of a random variable.
+In the previous section we understood how a random variable is defined through an example, and the process appeared straightforward. However, this simplicity arose because of the implicit property of the sample space being countably finite. The sample space could also have been countably infinite or uncountably infinite. Let's see what these terms mean and how it helps in revising the definition of a random variable.
 
 ## Countably Finite Set
 
@@ -189,3 +226,4 @@ We will introduce these concepts as we refine our construction of the definition
 # References
 
 1.  Gubner, John A. _Probability and Random Processes for Electrical and Computer Engineers_. Cambridge University Press, 2006.
+2.  [Introduction to Probability, by Dimitri P. Bertsekas and John N. Tsitsiklis](https://vfu.bg/en/e-Learning/Math--Bertsekas_Tsitsiklis_Introduction_to_probability.pdf)
