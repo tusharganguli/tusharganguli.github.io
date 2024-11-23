@@ -31,6 +31,14 @@ If you understand the above definition in its entirety, then I congratulate you 
 
 ---
 
+# Aim
+The purpose of defining a random variable is to be able to study the probability associated with an experiment.
+
+# Pre-Requisites
+## Set Theory
+
+## Axioms of Probability
+
 # Intuitive Discussion
 
 ## Sample Space, Outcomes and Events
@@ -48,8 +56,10 @@ Consider an experiment involving ten successive coin tosses.
 **Outcomes**: Each outcome is a $$10$$ character string with each character is either a $$H$$ or $$T$$.
 
 $$
-  \omega_1 = HHTTTHHTHH \\
-  \omega_2 = HTHHTTTHHH
+  \begin{align*}
+    \omega_1 &= HHTTTHHTHH \\
+    \omega_2 &= HTHHTTTHHH
+  \end{align*}
 $$
 
 **Sample Space**: Set of all such outcomes is the sample space $$\Omega$$
