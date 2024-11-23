@@ -58,7 +58,7 @@ $$
   \Omega = \{ HHHHHHHHHH, HTHHTTTHHH, TTTTTTTTTT, \cdots \}
 $$
 
-The total number of possible outcomes of the sample space is, $$|\Omega| = 2^{10} = 1024$$.
+The total number of possible outcomes of the sample space is, $$\vert\Omega\vert = 2^{10} = 1024$$.
 
 **Events**: An event is a subset of the sample space. Some examples are:
 
@@ -73,7 +73,7 @@ The total number of possible outcomes of the sample space is, $$|\Omega| = 2^{10
   E_2 = \{\omega \in \Omega : \text{Number of } H \text{ in } \omega = 4\}
   $$
 
-Now let's revisit the definition of a random variable $$X$$:
+The immediate question that arises is how all this fits into the defnition of a random variable. Now let's formally define a random variable $$X$$:
 
 $$
 \begin{equation}
@@ -92,69 +92,17 @@ A random variable acts as a bridge, translating outcomes ($$\omega$$) into numer
 - The outcomes ($$\omega$$) that belong in the sample space ($$\Omega$$), correspond to the measure (distribution) that we want to study mathematically.
 - The measure is already present in these outcomes ($$\omega$$) and we define a random variable ($$X$$) to map that measure to the Real line ($$\mathbb{R}$$).
 
-Let's look at an example.
-
-## Example
-
-Gubner [1], Example 2.1: Let us construct a model for counting the number of heads in a sequence of three coin tosses. For the underlying sample space, we take
-
-$$
-    \Omega = \{\text{TTT, TTH, THT, HTT, THH, HTH, HHT, HHH} \},
-$$
-
-that contains the eight possible sequences of tosses.
-
-- Our events of interest are the _number of heads in a sequence of three coin tosses_.
-- The number of heads can range from $$0$$ to $$3$$. Hence, the random variable will map the events of interest to the following set:
-
-  $$
-  R = \{ 0,1,2,3 \}
-  $$
-
-- The mapping will be:
-
-  $$
-      \Omega \rightarrow R
-  $$
-
-- Hence our random variable is defined as:
-
-  $$
-  X(\omega) = \begin{cases}
-                  0, & \omega = \{\text{TTT}\} \\
-                  1, & \omega = \{\text{TTH, THT, HTT}\} \\
-                  2, & \omega = \{\text{THH, HTH, HHT}\} \\
-                  3, & \omega = \{\text{HHH}\}
-              \end{cases}
-  $$
-
-**Q. What is the difference between events and outcomes?**
-
-The sample space ($$\Omega$$) is the universal set containing all possible outcomes of the experiment. A subset of the sample space ($$A \subseteq \Omega$$) represents an event. If an outcome ($$\omega$$) is part of an event, then $$\omega \in A$$, where $$A$$ is a specific subset of $$\Omega$$.
-
-**Q. Why do we need to define events and outcomes seperately?**
-
-- _Outcomes_: Represents each possible result of an experiment ("Heads" or "Tails" in a coin flip).
-- _Events_: Represents sets of outcomes grouped together for a specific scenario ("At least one head in two coin flips"). For each outcome from the sample space there exist a corresponding real number.
-
 **Q. What is the purpose of this mapping?**
 
 The purpose of this mapping is to study the statistical properties of the random variable $$X$$, which encapsulates the behavior of outcomes in the sample space. In statistical terms, the properties of a random variable are often described using measures like mean, variance, and higher-order moments. These measures summarize key aspects of the data, such as its central tendency (mean) and variability (variance). The moments of a random variable $$X$$ like mean ($$\mathbb{E}[X]$$) and variance ($$\text{Var}(X)$$) provide critical insights into the distribution of $$X$$. Higher-order moments (e.g., skewness and kurtosis) offer a more nuanced understanding of the behavior of $$X$$. This mathematical representation allows us to gain significant insights into the behavior of a random variable through its moments.The exercise of creating a random variable is about defining a mapping from a sample space ($$\Omega$$) to the real numbers ($$\mathbb{R}$$).
 
 For example, if we define the random variable $$X$$ as the number of heads in 2 successive coin flips, then $$X$$(No of Heads) $$= \{0,1,2\}$$. The mapping defined by the random variable $$X$$ induces a distribution from the underlying probability measure $$P$$ on the sample space $$\Omega$$. In this example we can say that $$X$$ follows a Binomial distribution. This is because the random variable $$X$$ transforms the distribution on the sample space $$\Omega$$ into a distribution on the real line.
 
-**Q. What does it mean when we say: The random variable $$X$$ is normally distributed?**
+## Probability Mass Function
 
-Suppose $$X$$ is a random variable with a Gaussian distribution $$N(m, \sigma^2)$$, where $$m$$ is the mean and $$\sigma^2$$ is the variance, denoted as:
+Characterizes the random variable through probabilities of values it can take. Suppose $$X$$ is the random variable. What is the
 
-$$
-X \sim N(m, \sigma^2)
-$$
-
-- This means that the random variable $$X$$, which maps outcomes from the sample space $$\Omega$$ to the real line $$\mathbb{R}$$, induces a normal distribution on $$\mathbb{R}$$ with mean $$m$$ and variance $$\sigma^2$$.
-- The induced distribution on $$\mathbb{R}$$ is described by the probability density function of the normal distribution.
-
-The distribution is present in the sample space $$\Omega$$, but when we map outcomes via $$X(\omega)$$, this distribution is transformed (or induced) onto the real line $$\mathbb{R}$$. This allows us to study the random variable $$X$$ and its properties mathematically.
+**Q. What does it mean when we say: The random variable $$X$$ has a binomial distribution?**
 
 ---
 
