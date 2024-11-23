@@ -32,9 +32,11 @@ If you understand the above definition in its entirety, then I congratulate you 
 ---
 
 # Aim
+
 The purpose of defining a random variable is to be able to study the probability associated with an experiment.
 
 # Pre-Requisites
+
 ## Set Theory
 
 ## Axioms of Probability
