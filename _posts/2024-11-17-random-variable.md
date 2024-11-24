@@ -41,8 +41,6 @@ The purpose of defining a random variable is to be able to study the probability
 
 # Sample Space, Outcomes and Events
 
-Reference: [Lecture Notes, Introduction to Probability by Bertsekas and Tsitsikilis - Section 1.2](https://vfu.bg/en/e-Learning/Math--Bertsekas_Tsitsiklis_Introduction_to_probability.pdf)
-
 When we run an experiment it could produce many possible outcomes. Set of all such possible outcomes is the sample space ($$\Omega$$) of the experiment. A subset of the sample space, which is the collection of all possible outcomes is called an event.
 
 ## Example
@@ -219,6 +217,12 @@ The above equation:
 
 - Describes the probabilities of all possible values the random variable $$X$$ can take.
 - The event $$\{X=k\}$$ is a subset of the sample space $$\Omega$$ and contains all outcomes ($$\omega$$) for which $$X(\omega) = k$$.
+
+---
+
+# Continuous Random Variable
+
+Under Construction
 
 ---
 
