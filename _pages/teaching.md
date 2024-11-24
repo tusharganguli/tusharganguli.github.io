@@ -2,12 +2,11 @@
 layout: page
 permalink: /acad_appts/
 title: Academic Appts.
-description: List of academic appointments held.
+description:
 nav: true
 nav_order: 6
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

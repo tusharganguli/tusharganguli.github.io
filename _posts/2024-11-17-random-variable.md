@@ -8,6 +8,8 @@ categories: probability
 related_posts: false
 ---
 
+# Definition of a Random Variable
+
 According to Gubner [1], Note 2.1, A function X from $$\Omega$$ into $$\mathbb{R}$$ is a random variable if and only if,
 
 $$
@@ -35,21 +37,15 @@ If you understand the above definition in its entirety, then I congratulate you 
 
 The purpose of defining a random variable is to be able to study the probability associated with an experiment.
 
-# Pre-Requisites
+---
 
-## Set Theory
-
-## Axioms of Probability
-
-# Intuitive Discussion
-
-## Sample Space, Outcomes and Events
+# Sample Space, Outcomes and Events
 
 Reference: [Lecture Notes, Introduction to Probability by Bertsekas and Tsitsikilis - Section 1.2](https://vfu.bg/en/e-Learning/Math--Bertsekas_Tsitsiklis_Introduction_to_probability.pdf)
 
 When we run an experiment it could produce many possible outcomes. Set of all such possible outcomes is the sample space ($$\Omega$$) of the experiment. A subset of the sample space, which is the collection of all possible outcomes is called an event.
 
-### Example
+## Example
 
 Consider an experiment involving ten successive coin tosses.
 
@@ -110,78 +106,79 @@ The purpose of this mapping is to study the statistical properties of the random
 
 For example, if we define the random variable $$X$$ as the number of heads in 2 successive coin flips, then $$X$$(No of Heads) $$= \{0,1,2\}$$. The mapping defined by the random variable $$X$$ induces a distribution from the underlying probability measure $$P$$ on the sample space $$\Omega$$. In this example we can say that $$X$$ follows a Binomial distribution. This is because the random variable $$X$$ transforms the distribution on the sample space $$\Omega$$ into a distribution on the real line.
 
-## Probability Mass Function
+---
+
+# Types of Random Variable
+
+Depending on the range of numerical values that the random variable $$X$$ can take, a random variable is either a discrete random variable or a continuous random variable.
+
+- **Discrete Random Variable**: If the range of the random variable is finite or countably infinite.
+- **Continuous Random Variable**: If the range of the random variable is uncountably infinite.
+
+---
+
+# Cardinality of a Set
+
+The cardinality of a set refers to the size or number of elements in the set. Sets can have different cardinalities, which are broadly categorized as finite, countably infinite, and uncountably infinite.
+
+- A **countably finite set** is a set with a finite number of elements and can be put into a one-to-one correspondence with the first $$n$$ positive integers, where $$n$$ is finite.
+
+  - **Example**:
+    The set $$A = \{2, 4, 6, 8\}$$ has 4 elements that correspond to the natural numbers $$\{1, 2, 3, 4\}$$.
+
+- A **countably infinite set** is a set with infinitely many elements, but these elements can still be put into a one-to-one correspondence with the set of natural numbers ($$\mathbb{N}$$).
+
+  - **Examples**:
+    - The set of all natural numbers: $$\mathbb{N} = \{1, 2, 3, 4, \dots\}$$.
+    - The set of all integers: $$\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots\}$$. - $$\mathbb{Z}$$ can be mapped to $$\mathbb{N}$$ using:
+      $$
+      f(n) =
+      \begin{cases}
+      2n & \text{if } n > 0 \\
+      -2n + 1 & \text{if } n \leq 0
+      \end{cases}
+      $$
+    - The set of even numbers, $$E = \{2, 4, 6, 8, \dots\}$$ maps $$ E \to \mathbb{N} $$ with $$f(n) = 2n$$.
+
+- A set is **uncountably infinite** if it contains infinitely many elements that cannot be put into a one-to-one correspondence with the set of natural numbers ($$\mathbb{N}$$). In other words, the set is too large to be enumerated, even in principle.
+
+  - **Example**:
+    The interval $$[0, 1] \subset \mathbb{R}$$ is uncountably infinite. This can be proven by Cantor's diagonal argument, which demonstrates that no list can include all real numbers.
+
+---
+
+# Example of Different Types of Random Variable
+
+- **Discrete Random Variable - Countably Finite**:
+  - Experiment: Two successive rolls of a die.
+  - Random Variable: The sum of the two rolls is less than $$8$$.
+- **Discrete Random Variable - Countably Infinite**:
+  - Experiment: Choosing a point $$a$$ from the interval $$[0,1]$$.
+  - Random Variable: Associate the value $$a^2$$ to such a point.
+- **Discrete Random Variable - Countably Finite**:
+  - Experiment: Choosing a point $$a$$ from the interval $$[0,1]$$.
+  - Random Variable: Associate the value $$a^2$$ to such a point.
+
+---
+
+# Probability Mass Function
 
 Characterizes the random variable through probabilities of values it can take. Suppose $$X$$ is the random variable. What is the
 
 **Q. What does it mean when we say: The random variable $$X$$ has a binomial distribution?**
 
----
-
-# Let's Deep Dive
-
-In the previous section we understood how a random variable is defined through an example, and the process appeared straightforward. However, this simplicity arose because of the implicit property of the sample space being countably finite. The sample space could also have been countably infinite or uncountably infinite. Let's see what these terms mean and how it helps in revising the definition of a random variable.
-
-## Countably Finite Set
-
-A **countably finite set** is a set with a finite number of elements and can be put into a one-to-one correspondence with the first $$n$$ positive integers, where $$n$$ is finite.
-
-- **Example**:
-  The set $$A = \{2, 4, 6, 8\}$$ has 4 elements that correspond to the natural numbers $$\{1, 2, 3, 4\}$$.
-
-## Countably Infinite Set
-
-A **countably infinite set** is a set with infinitely many elements, but these elements can still be put into a one-to-one correspondence with the set of natural numbers ($$\mathbb{N}$$).
-
-- **Definition**: A set is countably infinite if there exists a bijection (one-to-one and onto mapping) between the set and the set of natural numbers $$\mathbb{N} = \{1, 2, 3, \dots\}$$.
-- **Examples**:
-  - The set of all natural numbers: $$\mathbb{N} = \{1, 2, 3, 4, \dots\}$$.
-  - The set of all integers: $$\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots\}$$. - $$\mathbb{Z}$$ can be mapped to $$\mathbb{N}$$ using:
-    $$
-    f(n) =
-    \begin{cases}
-    2n & \text{if } n > 0 \\
-    -2n + 1 & \text{if } n \leq 0
-    \end{cases}
-    $$
-  - The set of even numbers, $$E = \{2, 4, 6, 8, \dots\}$$ maps $$ E \to \mathbb{N} $$ with $$f(n) = 2n$$.
-
-## Uncountably Infinite Set
-
-A set is **uncountably infinite** if it contains infinitely many elements that cannot be put into a one-to-one correspondence with the set of natural numbers ($$\mathbb{N}$$). In other words, the set is too large to be enumerated, even in principle.
-
-**Properties**
-
-- An uncountably infinite set has a **greater cardinality** than countable sets like $$\mathbb{N}$$ or $$\mathbb{Z}$$.
-- The term "uncountable" reflects the impossibility of listing all elements of the set, even using an infinite process.
-
-**Example**
-
-The interval $$[0, 1] \subset \mathbb{R}$$ is uncountably infinite. This can be proven by Cantor's diagonal argument, which demonstrates that no list can include all real numbers.
-
----
-
-# Revisit the definition
-
-Now that we understand different types of sample spaces, let's revisit our definition of a random variable as presented in Equation (1):
+If $$X$$ is a binomial random variable with parameters $$n$$ and $$p$$. Then the PMF of $$X$$ is defined as:
 
 $$
-    X(\omega) : \Omega \rightarrow \mathbb{R}
+  P(\{X=k\}) = \binom{n}{x}p^x(1-p)^{n-x}
 $$
 
-Here, $$\omega$$ represents an outcome within the sample space $$\Omega$$. The sample space ($$\Omega$$) can vary based on its cardinality and can be:
+The above equation:
 
-- **Countably Finite**: For instance, when $$\Omega$$ consists of outcomes from a finite experiment like flipping a coin a fixed number of times.
-- **Countably Infinite**: For example, when $$\Omega$$ includes outcomes indexed by natural numbers, such as set of all integers.
-- **Uncountably Infinite**: Such as when $$\Omega$$ is the set of all possible real numbers, like measuring precise temperatures or distances. These outcomes form a continuous sample space, which is inherently uncountable.
+- Describes the probabilities of all possible values the random variable $$X$$ can take.
+- The event $$\{X=k\}$$ is a subset of the sample space $$\Omega$$ and contains all outcomes ($$\omega$$) for which $$X(\omega) = k$$.
 
-To build our concept further, we need to get a grasp of certain fundamental theory in mathematics:
-
-- Set Theory
-- Axioms of Probability
-- Probability Space
-
-We will introduce these concepts as we refine our construction of the definition of a random variable.
+---
 
 # References
 
