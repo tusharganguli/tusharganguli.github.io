@@ -51,19 +51,19 @@ Consider an experiment involving ten successive coin tosses.
 
 **Experiment**: Ten successive coin tosses.
 
-**Outcomes**: Each outcome is a $$10$$ character string with each character is either a $$H$$ or $$T$$.
+**Outcomes**: Each outcome is a $$10$$ character string with each character is either a H or T.
 
 $$
   \begin{align*}
-    \omega_1 &= HHTTTHHTHH \\
-    \omega_2 &= HTHHTTTHHH
+    \omega_1 &= \text{HHTTTHHTHH} \\
+    \omega_2 &= \text{HTHHTTTHHH}
   \end{align*}
 $$
 
 **Sample Space**: Set of all such outcomes is the sample space $$\Omega$$
 
 $$
-  \Omega = \{ HHHHHHHHHH, HTHHTTTHHH, TTTTTTTTTT, \cdots \}
+  \Omega = \{ \text{HHHHHHHHHH}, \text{HTHHTTTHHH}, \text{TTTTTTTTTT}, \cdots \}
 $$
 
 The total number of possible outcomes of the sample space is, $$\vert\Omega\vert = 2^{10} = 1024$$.
@@ -73,12 +73,12 @@ The total number of possible outcomes of the sample space is, $$\vert\Omega\vert
 - **First Head Occurs on the 3rd Toss**: The set of outcomes where the first Head appears on the 3rd toss:
 
   $$
-    E_1 = \{\omega \in \Omega : \omega = TTHTTTTTTT \text{ or } \omega = TTHHHHHHHH \text{ and so on.}\}
+    E_1 = \{\omega \in \Omega : \omega = \text{TTHTTTTTTT or } \omega = \text{TTHHHHHHHH and so on.}\}
   $$
 
 - **Exactly 4 Heads in 10 Tosses**: The set of outcomes with exactly 4 Heads:
   $$
-  E_2 = \{\omega \in \Omega : \text{Number of } H \text{ in } \omega = 4\}
+  E_2 = \{\omega \in \Omega : \text{Number of H in } \omega = 4\}
   $$
 
 The immediate question that arises is how all this fits into the defnition of a random variable. Now let's formally define a random variable $$X$$:
@@ -153,11 +153,37 @@ The cardinality of a set refers to the size or number of elements in the set. Se
   - Experiment: Two successive rolls of a die.
   - Random Variable: The sum of the two rolls is less than $$8$$.
 - **Discrete Random Variable - Countably Infinite**:
+  - Experiment: Roll a single six-sided die repeatedly where the sample space for each roll is $$\Omega={1,2,3,4,5,6}$$.
+  - Random Variable: The roll count on which $$6$$ appears for the first time.
+- **Continuous Random Variable - Uncountably Infinite**:
   - Experiment: Choosing a point $$a$$ from the interval $$[0,1]$$.
   - Random Variable: Associate the value $$a^2$$ to such a point.
-- **Discrete Random Variable - Countably Finite**:
-  - Experiment: Choosing a point $$a$$ from the interval $$[0,1]$$.
-  - Random Variable: Associate the value $$a^2$$ to such a point.
+
+---
+
+# Probability
+
+- The probability law assigns probabilities to event ($$A$$), which are subset of the sample space ($$A \subseteq \Omega$$).
+- **Remember**: Random variable assigns values to outcomes.
+
+## Example
+
+- Experiment: Toss a coin three times.
+- Sample Space: $$\Omega = \{\text{HHH},\text{HHT},\text{HTH},\text{HTT},\text{THH},\text{THT},\text{TTH},\text{TTT}\}$$
+- Random Variable: Let $$X$$ represent the number of heads:
+
+  - $$
+      X(\text{HHH}) = 3, \; X(\text{HHT}) = 2, \; X(\text{HTT}) = 1, \; X(\text{TTT}) = 0.
+    $$
+
+- Let the event be, "The number of heads is 2", which would be represented by: $$ \{\text{HHT}, \text{HTH}, \text{THH}\} \subseteq \Omega $$
+- The probability of an event would be calculated by summing the probabilities of the outcomes in that event.
+  - As $$\{X=2\} = \{\text{HHT}, \text{HTH}, \text{THH}\}$$, hence:
+    $$
+      P(X = 2) = P(\text{HHT}) + P(\text{HTH}) + P(\text{THH}) = \frac{1}{8} + \frac{1}{8} + \frac{1}{8} = \frac{3}{8}.
+    $$
+
+Hence, the random variable $$X$$ creates a mapping from $$\Omega$$ to $$\mathbb{R}$$ and the probability law assigns probabilities to events such as $$\{X = x\}$$, allowing us to compute the probability distribution of $$X$$.
 
 ---
 
