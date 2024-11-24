@@ -208,5 +208,8 @@ The above equation:
 
 # References
 
+**"If I have seen further, it is by standing on the shoulders of giants."**  
+_— Sir Isaac Newton_
+
 1.  Gubner, John A. _Probability and Random Processes for Electrical and Computer Engineers_. Cambridge University Press, 2006.
 2.  [Introduction to Probability, by Dimitri P. Bertsekas and John N. Tsitsiklis](https://vfu.bg/en/e-Learning/Math--Bertsekas_Tsitsiklis_Introduction_to_probability.pdf)
