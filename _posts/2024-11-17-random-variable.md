@@ -163,7 +163,7 @@ The cardinality of a set refers to the size or number of elements in the set. Se
 
 # Probability
 
-- The probability law assigns probabilities to event ($$A$$), which are subset of the sample space ($$A \subseteq \Omega$$).
+- The probability law assigns probabilities to event ($$A$$), which is a subset of the sample space ($$A \subseteq \Omega$$).
 - **Remember**: Random variable assigns values to outcomes.
 
 ## Example
@@ -172,15 +172,20 @@ The cardinality of a set refers to the size or number of elements in the set. Se
 - Sample Space: $$\Omega = \{\text{HHH},\text{HHT},\text{HTH},\text{HTT},\text{THH},\text{THT},\text{TTH},\text{TTT}\}$$
 - Random Variable: Let $$X$$ represent the number of heads:
 
-  - $$
-      X(\text{HHH}) = 3, \; X(\text{HHT}) = 2, \; X(\text{HTT}) = 1, \; X(\text{TTT}) = 0.
-    $$
+  $$
+      \begin{align*}
+        X(\text{HHH}) &= 3 \\
+        X(\text{HHT}) &= X(\text{HTH}) = X(\text{THH}) = 2 \\
+        X(\text{HTT}) &= X(\text{THT}) = X(\text{TTH}) = 1 \\
+        X(\text{TTT}) &= 0
+      \end{align*}
+  $$
 
 - Let the event be, "The number of heads is 2", which would be represented by: $$ \{\text{HHT}, \text{HTH}, \text{THH}\} \subseteq \Omega $$
 - The probability of an event would be calculated by summing the probabilities of the outcomes in that event.
   - As $$\{X=2\} = \{\text{HHT}, \text{HTH}, \text{THH}\}$$, hence:
     $$
-      P(X = 2) = P(\text{HHT}) + P(\text{HTH}) + P(\text{THH}) = \frac{1}{8} + \frac{1}{8} + \frac{1}{8} = \frac{3}{8}.
+      P\{(X = 2)\} = P(\text{HHT}) + P(\text{HTH}) + P(\text{THH}) = \frac{1}{8} + \frac{1}{8} + \frac{1}{8} = \frac{3}{8}.
     $$
 
 Hence, the random variable $$X$$ creates a mapping from $$\Omega$$ to $$\mathbb{R}$$ and the probability law assigns probabilities to events such as $$\{X = x\}$$, allowing us to compute the probability distribution of $$X$$.
@@ -189,7 +194,18 @@ Hence, the random variable $$X$$ creates a mapping from $$\Omega$$ to $$\mathbb{
 
 # Probability Mass Function
 
-Characterizes the random variable through probabilities of values it can take. Suppose $$X$$ is the random variable. What is the
+Now that we understand how random variables are defined and how probabilities are assigned, let's tie all this up together.
+
+A random variable $$X$$ is a function that maps each outcome $$\omega \in \Omega$$ to a value $$x \in \mathbb{R}$$. Different outcomes in the sample space $$\Omega$$ can map to the same value $$x$$ under $$X$$.
+
+The probability mass function $$p_X(x)$$ is defined as the probability of the event $$\{X = x\}$$, which includes all outcomes in $$\Omega$$ that result in $$X(\omega) = x$$.
+
+$$
+  p_X(x) = P(\{X=x\})
+$$
+
+Here, $$x$$ is any possible value of $$X$$, the probability mass of $$x$$, denoted $$p_X(x)$$, is the probability of the event $$\{X = x\}$$ consisting of all outcomes
+that give rise to a value of $$X$$ equal to $$x$$. The previous example defines the random variable and demonstrates an example of how a specific event ($$P\{X=2\}$$) is assigned probability value.
 
 **Q. What does it mean when we say: The random variable $$X$$ has a binomial distribution?**
 
