@@ -180,6 +180,15 @@ The cardinality of a set refers to the size or number of elements in the set. Se
       \end{align*}
   $$
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/rv.png" class="img-fluid rounded z-depth-1"%}
+    </div>
+</div>
+<div class="caption">
+    X = \{Number of Heads\}.
+</div>
+
 - Let the event be, "The number of heads is 2", which would be represented by: $$ \{\text{HHT}, \text{HTH}, \text{THH}\} \subseteq \Omega $$
 - The probability of an event would be calculated by summing the probabilities of the outcomes in that event.
   - As $$\{X=2\} = \{\text{HHT}, \text{HTH}, \text{THH}\}$$, hence:
@@ -237,7 +246,7 @@ and can be interpreted as the area under the graph of the PDF.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/pdf.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/pdf.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
