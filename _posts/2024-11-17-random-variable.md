@@ -6,6 +6,7 @@ description: exposition on the definition of random variable.
 tags: randomvariable probability
 categories: probability
 related_posts: false
+giscus_comments: true
 ---
 
 # Definition of a Random Variable
@@ -41,7 +42,7 @@ The purpose of defining a random variable is to be able to study the probability
 
 # Sample Space, Outcomes and Events
 
-When we run an experiment it could produce many possible outcomes. Set of all such possible outcomes is the sample space ($$\Omega$$) of the experiment. A subset of the sample space, which is the collection of all possible outcomes is called an event.
+When we run an experiment it could produce many possible outcomes. Set of all such possible outcomes is the sample space ($$\Omega$$) of the experiment. A subset of the sample space, which is a collection of possible outcomes is called an event.
 
 ## Example
 
@@ -222,7 +223,19 @@ The above equation:
 
 # Continuous Random Variable
 
-Under Construction
+A continuous random variable can take an infinite number of possible values within a given range on the real line ($$\mathbb{R}$$). Continuous random variables can take on any value within an interval or collection of intervals on the real number line. For example, a random variable representing the height of people could be any real number within a plausible range (e.g., between 150 cm and 200 cm).
+
+Similar to a discrete random variable which is characterized by its PMF, a continuous random variable is described by a probability density function (PDF), denoted by $$f_{X}(x)$$. The PDF gives the relative likelihood that the variable takes a particular value.
+
+Unlike a probability mass function (PMF) for discrete random variables, the PDF is not the probability of a specific value. The probability that the random variable takes on a specific value is always zero for a continuous variable. Rather, the PDF is used to compute the probability that the random variable lies within a certain interval.
+
+$$
+  \mathcal{P}(a \leq X \leq b) = \int_{a}^{b} f_{X}(x) dx
+$$
+
+and can be interpreted as the area under the graph of the PDF.
+
+{% include figure.liquid loading="eager" path="assets/img/pdf.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ---
 
