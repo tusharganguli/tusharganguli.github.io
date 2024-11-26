@@ -182,11 +182,11 @@ The cardinality of a set refers to the size or number of elements in the set. Se
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/rv.png" class="img-fluid rounded z-depth-1"%}
+        {% include figure.liquid loading="eager" path="assets/img/rv.png" class="img-fluid rounded z-depth-1 w-50" zoomable=true %}
     </div>
 </div>
 <div class="caption">
-    X = \{Number of Heads\}.
+    X = {Number of Heads}.
 </div>
 
 - Let the event be, "The number of heads is 2", which would be represented by: $$ \{\text{HHT}, \text{HTH}, \text{THH}\} \subseteq \Omega $$
