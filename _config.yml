@@ -175,10 +175,6 @@ external_sources:
     posts:
       - url: https://www.dataworkz.com/2024/08/12/dataworkz-rag-builder-evaluation-framework/
         published_date: 2024-08-12
-  - name: Data Analysis
-    posts:
-      - url: https://github.com/tusharganguli/DataAnalysis/blob/ba87fd13e79033286894e5dc3da6de547eb1d0cf/custom_classifier.ipynb
-        published_date: 2024-07-16
 
 # -----------------------------------------------------------------------------
 # Newsletter
