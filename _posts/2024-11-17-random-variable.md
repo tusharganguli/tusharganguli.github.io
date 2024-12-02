@@ -4,7 +4,7 @@ title: What is a Random Variable? (Draft)
 date: 2024-11-17 11:11:11-111
 description: exposition on the definition of random variable.
 tags: randomvariable probability
-categories: probability
+categories: Probability
 related_posts: false
 giscus_comments: true
 ---
@@ -30,7 +30,7 @@ where:
 1. $$\{\omega \in \Omega : X(\omega) \in B \}$$: is the preimage of the Borel set $$B$$ under the random variable $$X$$. It is a subset of $$\Omega$$, representing the set of outcomes $$\omega$$ that map to values in $$B$$ under $$X$$.
 2. $$\in \mathcal{A}$$: This subset must belong to the $$\sigma$$-algebra $$\mathcal{A}$$ i.e., the preimage of any Borel set $$B$$ is an event that can be measured (assigned a probability).
 
-If you understand the above definition in its entirety, then I congratulate you on your grasp of the fundamental area of probability. If you do not understand the above and struggle like me, then you are welcome to partake this journey of understanding the nooks and crannies of _"how a random variable is defined"_.
+If you understand the above definition in its entirety, then I congratulate you on your grasp of this fundamental concept of probability. If, on the other hand, you do not completely understand the above definition and struggle like me, then you are welcome to partake in this journey of understanding the nooks and crannies of _"how a random variable is defined"_.
 
 ---
 
@@ -232,11 +232,16 @@ The above equation:
 
 # Continuous Random Variable
 
-A continuous random variable can take an infinite number of possible values within a given range on the real line ($$\mathbb{R}$$). Continuous random variables can take on any value within an interval or collection of intervals on the real number line. For example, a random variable representing the height of people could be any real number within a plausible range (e.g., between 150 cm and 200 cm).
+A continuous random variable can take an infinite number of possible values within a given range on the real line ($$\mathbb{R}$$).
+Continuous random variables can take on any value within an interval or collection of intervals on the real number line.
+For example, a random variable representing the height of people could be any real number within a plausible range (e.g., between 150 cm and 200 cm).
 
-Similar to a discrete random variable which is characterized by its PMF, a continuous random variable is described by a probability density function (PDF), denoted by $$f_{X}(x)$$. The PDF gives the relative likelihood that the variable takes a particular value.
+Similar to a discrete random variable which is characterized by its PMF, a continuous random variable is described by a probability density function (PDF),
+denoted by $$f_{X}(x)$$. The PDF gives the relative likelihood that the variable takes a particular value.
 
-Unlike a probability mass function (PMF) for discrete random variables, the PDF is not the probability of a specific value. The probability that the random variable takes on a specific value is always zero for a continuous variable. Rather, the PDF is used to compute the probability that the random variable lies within a certain interval.
+Unlike a probability mass function (PMF) for discrete random variables, the PDF is not the probability of a specific value.
+The probability that the random variable takes on a specific value is always zero for a continuous variable.
+Rather, the PDF is used to compute the probability that the random variable lies within a certain interval.
 
 $$
   \mathcal{P}(a \leq X \leq b) = \int_{a}^{b} f_{X}(x) dx
@@ -254,6 +259,8 @@ and can be interpreted as the area under the graph of the PDF.
 </div>
 
 ---
+
+# Continuous Models
 
 # References
 
