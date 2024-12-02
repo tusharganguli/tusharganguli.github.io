@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Evaluation Framework usingLLM-As-A-Judge
+title: Evaluation Framework using LLM-As-A-Judge
 date: 2024-08-12 11:11:11-111
 description: Creating an evaluation framework using llm-as-a-judge
 tags: evaluation_famrwork llm_as_a_judge
