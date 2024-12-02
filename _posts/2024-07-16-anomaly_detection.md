@@ -18,7 +18,6 @@ Moving Average
 Z-score analysis.
 
 ```liquid
-{::nomarkdown}
 {% assign jupyter_path = '/assets/jupyter/ad_timeseries.ipynb' | relative_url %}
 {% capture notebook_exists %}{% file_exists /assets/jupyter/ad_timeseries.ipynb %}{% endcapture %}
 {% if notebook_exists == 'true' %}
@@ -26,5 +25,4 @@ Z-score analysis.
 {% else %}
   <p>Sorry, the notebook you are looking for does not exist.</p>
 {% endif %}
-{:/nomarkdown}
 ```
