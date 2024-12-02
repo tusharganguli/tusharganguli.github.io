@@ -17,8 +17,6 @@ AutoRegressive Integrated Moving Average(ARIMA)
 Moving Average
 Z-score analysis.
 
-{% raw %}
-
 ```liquid
 {::nomarkdown}
 {% assign jupyter_path = 'assets/jupyter/ad_timeseries.ipynb' | relative_url %}
@@ -30,5 +28,3 @@ Z-score analysis.
 {% endif %}
 {:/nomarkdown}
 ```
-
-{% endraw %}
