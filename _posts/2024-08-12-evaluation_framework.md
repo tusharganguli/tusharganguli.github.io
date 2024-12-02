@@ -132,7 +132,7 @@ For detailed results and open-source code, refer to the [Evaluation Results](#).
   - [Wikipedia](https://en.wikipedia.org/wiki/BLEU)
   - [Bleu Metrics](https://medium.com/nlplanet/two-minutes-nlp-learn-the-bleu-metric-by-examples-df015ca73a86)
 - ROUGE Score
-  - [Wikipedia](https://en.wikipedia.org/wiki/ROUGE)
+  - [Wikipedia](<https://en.wikipedia.org/wiki/ROUGE_(metric)>)
   - [ROUGE Metrics](https://medium.com/nlplanet/two-minutes-nlp-learn-the-rouge-metric-by-examples-f179cc285499)
 - BERT Score
   - [Paper](https://arxiv.org/abs/1904.09675)
