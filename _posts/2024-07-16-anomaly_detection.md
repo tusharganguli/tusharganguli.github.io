@@ -20,6 +20,7 @@ Z-score analysis.
 ```liquid
 {::nomarkdown}
 {% assign jupyter_path = 'jupyter/ad_timeseries.ipynb' | relative_url %}
+<p>Debug: Jupyter Path = {{ jupyter_path }}</p>
 {% capture notebook_exists %}{% file_exists jupyter/ad_timeseries.ipynb %}{% endcapture %}
 {% if notebook_exists == 'true' %}
   {% jupyter_notebook jupyter_path %}
