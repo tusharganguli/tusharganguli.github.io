@@ -171,10 +171,6 @@ disqus_shortname: al-folio # put your disqus shortname
 external_sources:
   - name: medium.com
     rss_url: https://medium.com/@tushar.ganguli/feed
-  - name: Evaluation Framework
-    posts:
-      - url: https://www.dataworkz.com/2024/08/12/dataworkz-rag-builder-evaluation-framework/
-        published_date: 2024-08-12
 
 # -----------------------------------------------------------------------------
 # Newsletter
