@@ -10,7 +10,7 @@ giscus_comments: true
 ---
 
 **Disclaimer**
-This work was primarily done by me as a consultant working for Dataworkz, the original article reference is provided below:
+This work was completed by me on behalf of Dataworkz.
 <br>Original Article: [Dataworkz RAG Builder: Evaluation Framework](https://www.dataworkz.com/2024/08/12/dataworkz-rag-builder-evaluation-framework/)
 
 # Evaluation Framework
