@@ -15,15 +15,13 @@ For categorical data an ensemble of multiple classifiers were used:
 - Different voting classifiers were analyzed (hard and soft voting classifier).
 - Calibration techniques were applied namely: Platt Scaling and Isotonic Regression.
 
- <div
-  class="jupyter-notebook"
-  style="position: relative; width: 100%; margin: 0 auto;">
-  <div class="jupyter-notebook-iframe-container">
-    <iframe
-      src="/assets/jupyter/ad_multiclassifier.html"
-      style="position: absolute; top: 0; left: 0; border-style: none;"
-      width="100%"
-      height="100%"
-      onload="this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'"></iframe>
-  </div>
-</div>
+{::nomarkdown}
+{% assign jupyter_path = '/assets/jupyter/ad_multiclassifier.ipynb' | relative_url %}
+{% capture notebook_exists %}{% file_exists /assets/jupyter/ad_multiclassifier.ipynb %}{% endcapture %}
+{% if notebook_exists == 'true' %}
+{% jupyter_notebook jupyter_path %}
+{% else %}
+
+  <p>Sorry, the notebook you are looking for does not exist.</p>
+{% endif %}
+{:/nomarkdown}
