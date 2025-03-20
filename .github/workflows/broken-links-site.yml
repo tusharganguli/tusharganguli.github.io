@@ -29,6 +29,11 @@ jobs:
               "giscus.repo": "${{ github.repository }}",
               "baseurl": ""
             }
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+          pip3 install --upgrade jupyter
       - name: Install and Build 🔧
         run: |
           pip3 install --upgrade jupyter
