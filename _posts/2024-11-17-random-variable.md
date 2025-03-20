@@ -75,17 +75,17 @@ $$
 
 The total number of possible outcomes of the sample space is, $$\vert\Omega\vert = 2^{10} = 1024$$.
 
-**Events**: An event is a subset of the sample space. 
+**Events**: An event is a subset of the sample space.
 
 Some examples are:
 
-- *First Head Occurs on the 3rd Toss*: The set of outcomes where the first Head appears on the 3rd toss:
+- _First Head Occurs on the 3rd Toss_: The set of outcomes where the first Head appears on the 3rd toss:
 
   $$
     E_1 = \{\omega \in \Omega : \omega = \text{TTHTTTTTTT or } \omega = \text{TTHHHHHHHH and so on.}\}
   $$
 
-- *Exactly 4 Heads in 10 Tosses*: The set of outcomes with exactly 4 Heads:
+- _Exactly 4 Heads in 10 Tosses_: The set of outcomes with exactly 4 Heads:
   $$
   E_2 = \{\omega \in \Omega : \text{Number of H in } \omega = 4\}
   $$
@@ -143,11 +143,11 @@ The probability measure assigns probabilities to events ($$E$$), which is a subs
 
 Hence, the random variable $$X$$ creates a mapping from $$\Omega$$ to $$\mathbb{R}$$ and the probability law assigns probabilities to events such as $$\{X = x\}$$, allowing us to compute the probability distribution of $$X$$.
 
-The sample space $$\Omega$$, along with the collection of events $$E$$ and the probability measure $$P$$ defined on $$E$$, form a probability space $$(\Omega, E, P)$$. The random variable $$X$$ is a function that maps outcomes in $$\Omega$$ to real numbers in $$\mathbb{R}$$.  It does so in a way to transfer the probability measure $$P$$ from the events in $$E$$ to $$\mathbb{R}$$. This transferred probability measure on $$\mathbb{R}$$ is called the probability distribution of $$X$$.  It tells us the probabilities of $$X$$ taking on different values.
+The sample space $$\Omega$$, along with the collection of events $$E$$ and the probability measure $$P$$ defined on $$E$$, form a probability space $$(\Omega, E, P)$$. The random variable $$X$$ is a function that maps outcomes in $$\Omega$$ to real numbers in $$\mathbb{R}$$. It does so in a way to transfer the probability measure $$P$$ from the events in $$E$$ to $$\mathbb{R}$$. This transferred probability measure on $$\mathbb{R}$$ is called the probability distribution of $$X$$. It tells us the probabilities of $$X$$ taking on different values.
 
 ### Purpose of this mapping
 
-A random variable maps outcomes of an experiment into numbers. Why do we do this? Because it allows us to create a probability distribution. This distribution tells us how likely it is for the random variable to take on different numerical values. For example, if our random variable represents the number of heads in $$10$$ coin tossess, the distribution tells us the probability of getting $$0$$ heads, $$1$$ head, $$2$$ heads, so on and so forth.  Instead of working directly with the messy details of '$$HHTHT_\cdots$$' outcomes, we work with numbers and their associated probabilities. 
+A random variable maps outcomes of an experiment into numbers. Why do we do this? Because it allows us to create a probability distribution. This distribution tells us how likely it is for the random variable to take on different numerical values. For example, if our random variable represents the number of heads in $$10$$ coin tossess, the distribution tells us the probability of getting $$0$$ heads, $$1$$ head, $$2$$ heads, so on and so forth. Instead of working directly with the messy details of '$$HHTHT_\cdots$$' outcomes, we work with numbers and their associated probabilities.
 
 ---
 
@@ -179,8 +179,7 @@ The cardinality of a set refers to the size or number of elements in the set. Se
   - **Example**:
     The interval $$[0, 1] \subset \mathbb{R}$$ is uncountably infinite. This can be proven by Cantor's diagonal argument, which demonstrates that no list can include all real numbers.
 
-
---- 
+---
 
 # Probability Distributions of a Random Variable
 
@@ -202,22 +201,22 @@ A probability distribution tells us:
 
 A probability distribution can be broadly classified into two types, depending on whether the range of the random variable is discrete or continuous:
 
-- *Discrete Probability Distributions:* If $$X$$ can take on only a finite or countably infinite set of values (e.g., $$0,1,2,3,\dots$$), then its probability distribution is described using a *Probability Mass Function (PMF)* and $$X$$ is called a Discrete Random Variable.
-- *Continuous Probability Distributions:* If $$X$$ can take an uncountably infinite set of values (e.g., any real number within an interval on $$\mathbb{R}$$), then its probability distribution is described using a *Probability Density Function (PDF)* and $$X$$ is called a Continuous Random Variable.
+- _Discrete Probability Distributions:_ If $$X$$ can take on only a finite or countably infinite set of values (e.g., $$0,1,2,3,\dots$$), then its probability distribution is described using a _Probability Mass Function (PMF)_ and $$X$$ is called a Discrete Random Variable.
+- _Continuous Probability Distributions:_ If $$X$$ can take an uncountably infinite set of values (e.g., any real number within an interval on $$\mathbb{R}$$), then its probability distribution is described using a _Probability Density Function (PDF)_ and $$X$$ is called a Continuous Random Variable.
 
 ### Examples
 
-- *Discrete Random Variable where range is countably finite*:
+- _Discrete Random Variable where range is countably finite_:
   - Experiment: Two successive rolls of a die.
   - Random Variable: The sum of the two rolls is less than $$8$$.
-- *Discrete Random Variable where range is countably infinite*:
+- _Discrete Random Variable where range is countably infinite_:
   - Experiment: Roll a single six-sided die repeatedly where the sample space for each roll is $$\Omega={1,2,3,4,5,6}$$.
   - Random Variable: The roll count on which $$6$$ appears for the first time.
-- *Continuous Random Variable where range is uncountably infinite*:
+- _Continuous Random Variable where range is uncountably infinite_:
   - Experiment: Choosing a point $$a$$ from the interval $$[0,1]$$.
   - Random Variable: Associate the value $$a^2$$ to such a point.
 
-Despite these differences, both discrete and continuous distributions can be unified under the *Cumulative Distribution Function (CDF)*, which provides a cumulative measure of probability.
+Despite these differences, both discrete and continuous distributions can be unified under the _Cumulative Distribution Function (CDF)_, which provides a cumulative measure of probability.
 
 ## How We Define a Probability Distribution
 
@@ -306,7 +305,8 @@ A continuous random variable can take an infinite number of possible values with
 
 For example, a random variable representing the height of people could be any real number within a plausible range (e.g., between 150 cm and 200 cm).
 
-## Cumulative Distribution Function 
+## Cumulative Distribution Function
+
 A continuous random variable is characterized by its cumulative distribution function (CDF).
 The CDF of a continuous random variable $$X$$ is defined as:
 
@@ -320,6 +320,7 @@ This function is crucial because:
 - It allows us to define probabilities for intervals via the Borel $$\sigma$$-algebra.
 
 Two Questions that naturally arise are:
+
 - **Ques: Why is a continuous random variables defined through a CDF but not something analogous to a PMF for a discrete random variable?**
 - **Ques: What is a Borel-$$\sigma$$ algebra?**
 - **Ques: How is probabilities defined vis Borel $$\sigma$$-algebra?**
@@ -327,6 +328,7 @@ Two Questions that naturally arise are:
 ### Why CDF?
 
 ---
+
 ---
 
 Similar to discrete random variables which are characterized by their PMF, a continuous random variable is described by a probability density function (PDF),
@@ -358,6 +360,7 @@ and can be interpreted as the area under the graph of the PDF.
 In probability theory, the set of all real numbers, $$\mathbb{R}$$, contains **uncountably infinite elements**, making it necessary to define a suitable collection of subsets for probability assignment. The most commonly used collection of subsets is the **Borel $$\sigma$$-algebra**, denoted as $$\mathcal{B}(\mathbb{R})$$.
 
 ### Definition: Borel $$\sigma$$-Algebra
+
 The **Borel $$\sigma$$-algebra** is the smallest $$\sigma$$-algebra containing all open subsets of $$\mathbb{R}$$. Formally, it is the smallest collection $$\mathcal{B}(\mathbb{R})$$ such that:
 
 1. It contains all open intervals $$(a, b)$$, $$[a, b]$$, $$(a, b]$$, and $$[a, b)$$ for all $$a, b \in \mathbb{R}$$.
@@ -403,7 +406,6 @@ This construction ensures that all possible probability computations using $$X$$
 
 ---
 
-
 ### How the Normal CDF Maps to the Sample Space via Borel Sets
 
 If $$X$$ is a **normal random variable** with mean $$\mu$$ and variance $$\sigma^2$$, its CDF is given by:
@@ -446,8 +448,6 @@ This integral represents the total probability mass contained within the interva
 4. **When we say "$$X$$ has a normal CDF," it means the induced probability measure aligns with the normal distribution**, ensuring that every probability computation follows from the $$\sigma$$-algebraic structure.
 
 This formalizes how continuous random variables fit within the rigorous mathematical framework of probability theory.
-
-
 
 # References
 
